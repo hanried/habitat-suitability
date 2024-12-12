@@ -1,4 +1,8 @@
 # Analysis of Habitat Suitability of the Sheyenne and Caddo National Grasslands for Indiangrass (*Sorghastrum nutans*)
+
+[![DOI](https://zenodo.org/badge/891814932.svg)](https://doi.org/10.5281/zenodo.14425230)
+
+
 ## Project description:
 This project analyzes soil, topographic, and climate data to determine whether the Sheyenne and Caddo National Grasslands in the United States are, and will be, suitable habitats for the grass species *Sorghastrum nutans*. The Sheyenne National Grasslands are in the southeastern corner of the state of North Dakota and the Caddo National Grasslands are in the northwestern part of Texas, near the Texas-Oklahoma border.
 
