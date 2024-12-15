@@ -54,11 +54,11 @@ A fuzzy model is used to determine habitat suitability of *S. nutans* from 2076-
 <img
     src="/habitat-suitability-notebooks/habitat-suitability-plots-images/cng_bound_ave_ann_precip_rcp45_2076_2080_reproj_match_plot.png"
     alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
-    width="25%">
+    width="75%">
 <img
     src="/habitat-suitability-notebooks/habitat-suitability-plots-images/cng_bound_ave_ann_precip_rcp85_2076_2080_reproj_match_plot.png"
     alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
-    width="25%">
+    width="75%">
 
 ## **Citations**
 1. “Caddo-LBJ National Grasslands.” National Forests and Grasslands in Texas, U.S. Forest Service, U.S. Department of Agriculture, www.fs.usda.gov/detail/texas/about-forest/districts/?cid=fswdev3_008440. Accessed 2 Dec. 2024.
