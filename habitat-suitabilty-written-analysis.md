@@ -73,7 +73,7 @@ Comparing the RCP 4.5 and RCP 8.5 emissions scenarios, it can be condluded that 
     width="100%">
 <img
     src="/habitat-suitability-notebooks/habitat-suitability-plots-images/sng_bound_ave_ann_precip_rcp45_2076_2080_reproj_match_plot.png"
-    alt=""A plot of the boundaries of the Sheyenne National Grasslands on latitude and longitude axes is overlaid on top of a plot of the predicted average annual precipitation (mm) from 2076-2080 for the Sheyenne grasslands and surrounding areas for an emssisions scenario of RCP 8.5."
+    alt="A plot of the boundaries of the Sheyenne National Grasslands on latitude and longitude axes is overlaid on top of a plot of the predicted average annual precipitation (mm) from 2076-2080 for the Sheyenne grasslands and surrounding areas for an emssisions scenario of RCP 8.5."
     width="100%">
 
 ## **Citations**
