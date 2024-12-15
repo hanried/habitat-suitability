@@ -1,6 +1,8 @@
 
 # Written Analysis: Will the Caddo and Sheyenne National Grasslands be suitable habitats for *Sorghastrum nutans* from 2076-2080 depending on emissions scenario?
 
+## *See all code and notebooks on the [repository](https://github.com/hanried/habitat-suitability)*
+
 ## **Project Description**
 This project analyzes soil, topographic, and climate data to determine whether the Sheyenne and Caddo National Grasslands in the United States will be suitable habitats for the grass species *Sorghastrum nutans* from 2076-2080 depending on the Representative Concentration Pathway (RCP). The Sheyenne National Grasslands are in the southeastern corner of the state of North Dakota and the Caddo National Grasslands are in the northwestern part of Texas, near the Texas-Oklahoma border.
 
