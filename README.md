@@ -4,10 +4,28 @@
 
 
 ## Project description:
-This project analyzes soil, topographic, and climate data to determine whether the Sheyenne and Caddo National Grasslands in the United States are, and will be, suitable habitats for the grass species *Sorghastrum nutans*. The Sheyenne National Grasslands are in the southeastern corner of the state of North Dakota and the Caddo National Grasslands are in the northwestern part of Texas, near the Texas-Oklahoma border.
+This project analyzes soil, topographic, and climate data to determine whether the Sheyenne and Caddo National Grasslands in the United States will be suitable habitats for the grass species *Sorghastrum nutans* from 2076-2080 depending on the Representative Concentration Pathway (RCP). The Sheyenne National Grasslands are in the southeastern corner of the state of North Dakota and the Caddo National Grasslands are in the northwestern part of Texas, near the Texas-Oklahoma border. The Sheyenne National Grasslands are a tallgrass prairie.
 
-For the soil data, pH is analyzed. The topographic data is aspect derived from elevation, and the climate data is precipitation. More specifically for the climate data, monthly predictions for 2076 to 2080 are being compared between two different emissions scenarios: rcp4.5 and rcp8.5. To look at all three data together, it is assumed that soil pH and aspect will be very similar, if not the same, between current day, 2024, and 2076-2080. So current day soil pH and aspect will be used.
+For the soil data, pH is analyzed. The topographic data is aspect (degrees) derived from elevation (m), and the climate data is precipitation (mm). More specifically for the climate data, the predicted average annual precipitation (mm) from 2076-2080 is being compared between two different emissions scenarios: RCP 4.5 and RCP 8.5. To look at all three data together, it is assumed that soil pH and aspect will be very similar, if not the same, between current day, 2024, and 2076-2080. So current day soil pH and aspect will be used.
+
 ## How to run the code:
-what packages and tools were used to process the data?
-file and associated naming convention descriptions:
-What abbreviations/units are used?
+* Follow the order of the Jupyter Notebooks in the 'notebooks' folder from 00-06.
+    * The fuzzy model in notebook 05 only has pseudocode, so this would need to be completed by any future users.
+* All variables for the Sheyenne National Grasslands will start with 'sheyenne' and all variables for the Caddo National Grasslands will start with 'caddo'.
+
+* All packages used:
+    * import os
+    * from glob import glob
+    * import pathlib
+    * from math import floor, ceil
+
+    * import earthaccess # Access NASA data from the cloud
+    * import geopandas as gpd # Work with vector data
+    * import matplotlib.pyplot as plt
+    * import pandas as pd
+    * import rioxarray as rxr # Work with raster data
+    * from rioxarray.merge import merge_arrays # Merge rasters
+    * import skfuzzy as fuzz
+    * import xarray as xr
+    * import xrspatial
+
