@@ -10,7 +10,7 @@ For the soil data, pH is the analyzed variable. The topographic variable is aspe
         src="/habitat-suitability-notebooks/habitat-suitability-plots-images/golden-sunset-indiangrass-01.png"
         alt="A photo of the Golden Sunset variety of *Sorghastrum nutans*."
         width="25%">
-    <figcaption>Image source: [University of Minnesota](https://license.umn.edu/product/golden-sunset-grass)
+    <figcaption>Image source: <a href='https://license.umn.edu/product/golden-sunset-grass' target='_blank'>University of Minnesota</a></figcaption>
 </figure>
 
 ## **Site Descriptions**
