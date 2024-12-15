@@ -1,5 +1,6 @@
 
-# Written Analysis
+# Written Analysis: Will the Caddo and Sheyenne National Grasslands be suitable habitats for *Sorghastrum nutans* from 2076-2080 depending on emissions scenario?
+
 ## **Project Description**
 This project analyzes soil, topographic, and climate data to determine whether the Sheyenne and Caddo National Grasslands in the United States will be suitable habitats for the grass species *Sorghastrum nutans* from 2076-2080 depending on the Representative Concentration Pathway (RCP). The Sheyenne National Grasslands are in the southeastern corner of the state of North Dakota and the Caddo National Grasslands are in the northwestern part of Texas, near the Texas-Oklahoma border.
 
@@ -46,7 +47,7 @@ Climate data was downloaded from the MACAv2 THREDDS data server as raster data. 
 * The RCP 4.5 metadata can be found [here](http://thredds.northwestknowledge.net:8080/thredds/catalog/MACAV2/CanESM2/catalog.html?dataset=REACCHDatasetScan_CanESM2_MACAV2/macav2metdata_pr_CanESM2_r1i1p1_rcp45_2076_2080_CONUS_monthly.nc)
 
 ## **Model Description**
-A fuzzy model is used to determine habitat suitability of *S. nutans* from 2076-2080 depending on different RCP values, either 4.5 or 8.5. A fuzzy model was chosen because of the ability to assign any value between 0 and 1 as a "True" value. This is helpful because it allows for nuance and variation. For example, *S. nutans* has been found living in soils with a pH range of 4.8 to 8.0<sup>6</sup>. It may not be accurate to use a boolean logic model to say "If the pH is between 4.8 to 8.0, the soil is suitable for *S. nutans* and will be assigned a 1 for it's truth value". *S. nutans* may be best suited for soil pH values of 6-7, survive well in soils with pH values of 5.5 to 6 and 7 to 7.5, tolerate soil pH values of 4.8 to 5.5 and 7.5 to 8, and not survive in soil pH values below 4.8 and above 8. Using a fuzzy model allows all of those specific ranges and variation to be taken into account as a 1 could be assinged to soil pH values of 6-7, 0.75 could be assigned to soil pH values of 5.5 to 6 and 7 to 7.5, and so on.
+A fuzzy model is used to determine habitat suitability of *S. nutans* from 2076-2080 depending on different RCP values, either 4.5 or 8.5. A fuzzy model was chosen because of the ability to assign any value between 0 and 1 as a "True" value. This is helpful because it allows for nuance and variation. For example, *S. nutans* has been found living in soils with a pH range of 4.8 to 8.0<sup>6</sup>. It may not be accurate to use a boolean logic model to say "If the pH is between 4.8 to 8.0, the soil is suitable for *S. nutans* and will be assigned a 1 for it's truth value". *S. nutans* may be best suited for soil pH values of 6-7, survive well in soils with pH values of 5.5 to 6 and 7 to 7.5, tolerate soil pH values of 4.8 to 5.5 and 7.5 to 8, and not survive in soil pH values below 4.8 and above 8. Using a fuzzy model allows all of those specific ranges and variation to be taken into account as a 1 could be assinged to soil pH values of 6-7, 0.75 could be assigned to soil pH values of 5.5 to 6 and 7 to 7.5, and so on. A fuzzy model was not able to be completed for this project, so instead 4 plots will be compared below, 2 for Caddo and 2 for Sheyenne.
 
 ## **Plots**
 ### 1. Comparing the predicted average annual precipitation (mm) from 2076-2080 in the Caddo National Grasslands for RCP values of 4.5 and 8.5:
@@ -74,6 +75,7 @@ Comparing the RCP 4.5 and RCP 8.5 emissions scenarios, it can be condluded that 
     src="/habitat-suitability-notebooks/habitat-suitability-plots-images/sng_bound_ave_ann_precip_rcp85_2076_2080_reproj_match_plot.png"
     alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
     width="100%">
+
 ## **Citations**
 1. “Caddo-LBJ National Grasslands.” National Forests and Grasslands in Texas, U.S. Forest Service, U.S. Department of Agriculture, www.fs.usda.gov/detail/texas/about-forest/districts/?cid=fswdev3_008440. Accessed 2 Dec. 2024.
 2. Caddo National Grasslands WMA, Texas Parks and Wildlife Department, tpwd.texas.gov/huntwild/hunt/wma/find_a_wma/list/?id=4. Accessed 2 Dec. 2024.
