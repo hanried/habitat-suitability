@@ -35,7 +35,8 @@ According to the US Forest Service Sheyenne National Grasslands website, the She
 2. Caddo National Grasslands WMA, Texas Parks and Wildlife Department, tpwd.texas.gov/huntwild/hunt/wma/find_a_wma/list/?id=4. Accessed 2 Dec. 2024.
 3. “Sheyenne National Grassland.” Dakota Prairie Grasslands, U.S. Forest Service, U.S. Department of Agriculture, www.fs.usda.gov/recarea/dpg/recarea/?recid=79470. Accessed 2 Dec. 2024.
 ## **Data Descriptions & Citations**
-### Grassland Units
+### Grassland Boundaries
+The grassland boundaries are National Grassland units from the [National Grassland Units (Feature Layer) of the U.S. Forest Service - Geospatial Data Discovery open data site](https://data-usfs.hub.arcgis.com/datasets/usfs::national-grassland-units-feature-layer/about). Using their [API Explorer](https://data-usfs.hub.arcgis.com/datasets/usfs::national-grassland-units-feature-layer/api), I downloaded all National Grassland information including OBJECTID, NATIONALGRASSLANDID, GRASSLANDNAME, GIS_ACRES, SHAPE_AREA, SHAPE_LEN, and geometry. Full metadata for the National Grasslands Units can be found [here](https://www.arcgis.com/sharing/rest/content/items/b8db5d69787c408d9654a1f36438acbd/info/metadata/metadata.xml?format=default&output=html).
 ### Soil
 ### Elevation
 ### Climate
