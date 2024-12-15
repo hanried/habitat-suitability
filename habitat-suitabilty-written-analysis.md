@@ -17,6 +17,11 @@ Caddo National Grasslands is mainly in Texas, USA, although a small portion of i
 ### Sheyenne National Grasslands:
 According to the US Forest Service Sheyenne National Grasslands website, the Sheyenne National Grasslands are in the southeastern corner of North Dakota, USA and include 70,180 acres of public land amid 64,769 acres of private land. Camping, hiking, hunting, and backpacking are available as well as other recreational activities. This tallgrass prairie is home to prairie chickens, the Dakota skipper (a small butterfly), the Regal Fritillary (another type of butterfly), ferns, and the western prairie fringed orchid.<sup>3</sup>
 
+<img
+    src="/habitat-suitability-notebooks/habitat-suitability-plots/sng_plot.png"
+    alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
+    width="25%">
+
 ### Citations
 1. “Caddo-LBJ National Grasslands.” National Forests and Grasslands in Texas, U.S. Forest Service, U.S. Department of Agriculture, www.fs.usda.gov/detail/texas/about-forest/districts/?cid=fswdev3_008440. Accessed 2 Dec. 2024.
 2. Caddo National Grasslands WMA, Texas Parks and Wildlife Department, tpwd.texas.gov/huntwild/hunt/wma/find_a_wma/list/?id=4. Accessed 2 Dec. 2024.
