@@ -19,12 +19,12 @@ For the soil data, pH is analyzed. The topographic data is aspect (degrees) deri
     * import pathlib
     * from math import floor, ceil
 
-    * import earthaccess # Access NASA data from the cloud
-    * import geopandas as gpd # Work with vector data
+    * import earthaccess
+    * import geopandas as gpd
     * import matplotlib.pyplot as plt
     * import pandas as pd
-    * import rioxarray as rxr # Work with raster data
-    * from rioxarray.merge import merge_arrays # Merge rasters
+    * import rioxarray as rxr
+    * from rioxarray.merge import merge_arrays
     * import skfuzzy as fuzz
     * import xarray as xr
     * import xrspatial
