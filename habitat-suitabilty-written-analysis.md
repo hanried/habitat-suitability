@@ -9,6 +9,11 @@ For the soil data, pH is the analyzed variable. The topographic variable is aspe
 ### Caddo National Grasslands:
 Caddo National Grasslands is mainly in Texas, USA, although a small portion of it is in Oklahoma too. It includes two units: Bois d' Arc Creek Unit (13,360 acres) and Ladonia Unit (2,780 acres)<sup>2</sup> and 3 lakes: Lake Coffee Mill (651 acres), Lake Crockett (388 acres), and Lake Fannin (45 acres)<sup>1</sup>. In the Caddo Grasslands, several recreational activities are available such as camping, picnicking, and fishing.<sup>1</sup> The Caddo is also home to wildlife such as coyotes, waterfowl, turkey, largemouth bass, and sunfish.<sup>1</sup>
 
+<img
+    src="/habitat-suitability-notebooks/habitat-suitability-plots/cng_plot.png"
+    alt="A plot of the Caddo National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
+    width="25%">
+
 ### Sheyenne National Grasslands:
 According to the US Forest Service Sheyenne National Grasslands website, the Sheyenne National Grasslands are in the southeastern corner of North Dakota, USA and include 70,180 acres of public land amid 64,769 acres of private land. Camping, hiking, hunting, and backpacking are available as well as other recreational activities. This tallgrass prairie is home to prairie chickens, the Dakota skipper (a small butterfly), the Regal Fritillary (another type of butterfly), ferns, and the western prairie fringed orchid.<sup>3</sup>
 
