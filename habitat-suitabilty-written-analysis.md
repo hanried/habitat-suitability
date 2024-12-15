@@ -5,13 +5,12 @@ This project analyzes soil, topographic, and climate data to determine whether t
 
 For the soil data, pH is the analyzed variable. The topographic variable is aspect (degrees) derived from elevation (m), and the climate vairable is precipitation (mm). More specifically for the climate variable, the predicted average annual precipitation (mm) from 2076-2080 is being compared between two different emissions scenarios: RCP 4.5 and RCP 8.5. To look at all three data together, it is assumed that soil pH and aspect will be very similar, if not the same, between current day, 2024, and 2076-2080. So current day soil pH and aspect will be used.
 
-<figure>
-    <img
-        src="/habitat-suitability-notebooks/habitat-suitability-plots/golden-sunset-indiangrass-01.png"
-        alt="A photo of the Golden Sunset variety of *Sorghastrum nutans*."
-        width="25%">
-    <figcaption>Image source: [University of Minnesota](https://license.umn.edu/product/golden-sunset-grass)
-</figure>
+
+<img
+    src="/habitat-suitability-notebooks/habitat-suitability-plots/golden-sunset-indiangrass-01.png"
+    alt="A photo of the Golden Sunset variety of *Sorghastrum nutans*."
+    width="25%">
+
 
 ## **Site Descriptions**
 ### Caddo National Grasslands:
