@@ -9,7 +9,7 @@ This project analyzes soil, topographic, and climate data to determine whether t
 For the soil data, pH is the analyzed variable. The topographic variable is aspect (degrees) derived from elevation (m), and the climate vairable is precipitation (mm). More specifically for the climate variable, the predicted average annual precipitation (mm) from 2076-2080 is being compared between two different emissions scenarios: RCP 4.5 and RCP 8.5. To look at all three data together, it is assumed that soil pH and aspect will be very similar, if not the same, between current day, 2024, and 2076-2080. So current day soil pH and aspect will be used.
 
 ## How to run the code:
-* Follow the order of the Jupyter Notebooks in the 'notebooks' folder from 00-06.
+* Follow the order of the Jupyter Notebooks in the 'notebooks' folder from 00-05.
     * The fuzzy model in notebook 05 only has pseudocode, so this would need to be completed by any future users.
 * All variables for the Sheyenne National Grasslands will start with 'sheyenne' and all variables for the Caddo National Grasslands will start with 'caddo'.
 
