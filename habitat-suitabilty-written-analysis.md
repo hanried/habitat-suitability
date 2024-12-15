@@ -53,11 +53,11 @@ A fuzzy model is used to determine habitat suitability of *S. nutans* from 2076-
 ### 1. Comparing the predicted average annual precipitation (mm) from 2076-2080 in the Caddo National Grasslands for RCP values of 4.5 and 8.5:
 <img
     src="/habitat-suitability-notebooks/habitat-suitability-plots-images/cng_bound_ave_ann_precip_rcp45_2076_2080_reproj_match_plot.png"
-    alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
+    alt="A plot of the boundaries of the Caddo National Grasslands on latitude and longitude axes is overlaid on top of a plot of the predicted average annual precipitation (mm) from 2076-2080 for the Caddo grasslands and surrounding areas for an emssisions scenario of RCP 4.5."
     width="100%">
 <img
     src="/habitat-suitability-notebooks/habitat-suitability-plots-images/cng_bound_ave_ann_precip_rcp85_2076_2080_reproj_match_plot.png"
-    alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
+    alt="A plot of the boundaries of the Caddo National Grasslands on latitude and longitude axes is overlaid on top of a plot of the predicted average annual precipitation (mm) from 2076-2080 for the Caddo grasslands and surrounding areas for an emssisions scenario of RCP 8.5."
     width="100%">
 
 The black outline in both of the plots above are the boundaries of the Caddo National Grasslands. Both plots show the predicted average annual precipitation (mm) from 2076-2080 for two different emissions scenarios: RCP 4.5 and RCP 8.5. Both precipitation plots have been reprojected and matched to the Caddo soil pH DataArray. 
@@ -69,11 +69,11 @@ Comparing the RCP 4.5 and RCP 8.5 emissions scenarios, it can be condluded that 
 ### 2. Comparing the predicted average annual precipitation (mm) from 2076-2080 in the Sheyenne National Grasslands for RCP values of 4.5 and 8.5:
 <img
     src="/habitat-suitability-notebooks/habitat-suitability-plots-images/sng_bound_ave_ann_precip_rcp45_2076_2080_reproj_match_plot.png"
-    alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
+    alt="A plot of the boundaries of the Sheyenne National Grasslands on latitude and longitude axes is overlaid on top of a plot of the predicted average annual precipitation (mm) from 2076-2080 for the Sheyenne grasslands and surrounding areas for an emssisions scenario of RCP 4.5."
     width="100%">
 <img
-    src="/habitat-suitability-notebooks/habitat-suitability-plots-images/sng_bound_ave_ann_precip_rcp85_2076_2080_reproj_match_plot.png"
-    alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
+    src="/habitat-suitability-notebooks/habitat-suitability-plots-images/sng_bound_ave_ann_precip_rcp45_2076_2080_reproj_match_plot.png"
+    alt=""A plot of the boundaries of the Sheyenne National Grasslands on latitude and longitude axes is overlaid on top of a plot of the predicted average annual precipitation (mm) from 2076-2080 for the Sheyenne grasslands and surrounding areas for an emssisions scenario of RCP 8.5."
     width="100%">
 
 ## **Citations**
