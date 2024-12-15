@@ -23,22 +23,46 @@ Caddo National Grasslands is mainly in Texas, USA, although a small portion of i
     width="25%">
 
 ### Sheyenne National Grasslands:
-According to the US Forest Service Sheyenne National Grasslands website, the Sheyenne National Grasslands are in the southeastern corner of North Dakota, USA and include 70,180 acres of public land amid 64,769 acres of private land. Camping, hiking, hunting, and backpacking are available as well as other recreational activities. This tallgrass prairie is home to prairie chickens, the Dakota skipper (a small butterfly), the Regal Fritillary (another type of butterfly), ferns, and the western prairie fringed orchid.<sup>3</sup>
+According to the US Forest Service Sheyenne National Grasslands website, the Sheyenne National Grasslands are in the southeastern corner of North Dakota, USA and include 70,180 acres of public land amid 64,769 acres of private land. Camping, hiking, hunting, and backpacking are available as well as other recreational activities. This tallgrass prairie is home to prairie chickens, the Dakota skipper (a small butterfly), the Regal Fritillary (another type of butterfly), ferns, and the western prairie fringed orchid.<sup>5</sup>
 
 <img
     src="/habitat-suitability-notebooks/habitat-suitability-plots-images/sng_plot.png"
     alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
     width="25%">
 
-### Citations
-1. “Caddo-LBJ National Grasslands.” National Forests and Grasslands in Texas, U.S. Forest Service, U.S. Department of Agriculture, www.fs.usda.gov/detail/texas/about-forest/districts/?cid=fswdev3_008440. Accessed 2 Dec. 2024.
-2. Caddo National Grasslands WMA, Texas Parks and Wildlife Department, tpwd.texas.gov/huntwild/hunt/wma/find_a_wma/list/?id=4. Accessed 2 Dec. 2024.
-3. “Sheyenne National Grassland.” Dakota Prairie Grasslands, U.S. Forest Service, U.S. Department of Agriculture, www.fs.usda.gov/recarea/dpg/recarea/?recid=79470. Accessed 2 Dec. 2024.
 ## **Data Descriptions & Citations**
 ### Grassland Boundaries
 The grassland boundaries are National Grassland units from the [National Grassland Units (Feature Layer) of the U.S. Forest Service - Geospatial Data Discovery open data site](https://data-usfs.hub.arcgis.com/datasets/usfs::national-grassland-units-feature-layer/about). Using their [API Explorer](https://data-usfs.hub.arcgis.com/datasets/usfs::national-grassland-units-feature-layer/api), I downloaded all National Grassland information including OBJECTID, NATIONALGRASSLANDID, GRASSLANDNAME, GIS_ACRES, SHAPE_AREA, SHAPE_LEN, and geometry. Full metadata for the National Grasslands Units can be found [here](https://www.arcgis.com/sharing/rest/content/items/b8db5d69787c408d9654a1f36438acbd/info/metadata/metadata.xml?format=default&output=html).
+
 ### Soil
+The soil pH data comes from the POLARIS database. This database holds soil series probabilities for the contiguous United States at 30 m spatial resolution.<sup>3</sup> The soil varaibles that can be downloaded include silt percentage, clay percentage, and pH. Soil variables can be downloaded at depths ranging from 0 cm to 200 cm and statistics that can be downloaded are mean, mode, median, 5th percentile, and 95th percentile. See full list of varaibles and depths [here](http://hydrology.cee.duke.edu/POLARIS/PROPERTIES/v1.0/Readme) and access the [POLARIS dataset here](http://hydrology.cee.duke.edu/POLARIS/PROPERTIES/v1.0/?C=D;O=A).
+https://www.nrcs.usda.gov/plantmaterials/etpmcpg13196.pdf
+
 ### Elevation
+Elevation data was downloaded via the [earthaccess API](https://github.com/nsidc/earthaccess/). The specific dataset used is the SRTMGL1 NASA Shuttle Radar Topography Mission Global 1 arc second V003 dataset. The dataset has about a 30m resolution.<sup>4</sup>
+
 ### Climate
+Climate data was downloaded from the MACAv2 THREDDS data server as raster data. Specifically, the CanESM2 model was chosen, the climate variable is precipitation, the time period is from 2076-2080, the precipitatioon predictions are monthly, and the emissions scenarios being compared are RCP 4.5 and RCP 8.5.
+* The RCP 8.5 metadata can be found [here](http://thredds.northwestknowledge.net:8080/thredds/catalog/MACAV2/CanESM2/catalog.html?dataset=REACCHDatasetScan_CanESM2_MACAV2/macav2metdata_pr_CanESM2_r1i1p1_rcp85_2076_2080_CONUS_monthly.nc)
+* The RCP 4.5 metadata can be found [here](http://thredds.northwestknowledge.net:8080/thredds/catalog/MACAV2/CanESM2/catalog.html?dataset=REACCHDatasetScan_CanESM2_MACAV2/macav2metdata_pr_CanESM2_r1i1p1_rcp45_2076_2080_CONUS_monthly.nc)
+
 ## **Model Description**
+A fuzzy model is used to determine habitat suitability of *S. nutans* from 2076-2080 depending on different RCP values, either 4.5 or 8.5. A fuzzy model was chosen because of the ability to assign any value between 0 and 1 as a "True" value. This is helpful because it allows for nuance and variation. For example, *S. nutans* has been found living in soils with a [pH range of 4.8 to 8.0](https://www.nrcs.usda.gov/plantmaterials/etpmcpg13196.pdf). It may not be accurate to use a boolean logic model to say "If the pH is between 4.8 to 8.0, the soil is suitable for *S. nutans* and will be assigned a 1 for it's truth value". *S. nutans* may be best suited for soil pH values of 6-7, survive well in soils with pH values of 5.5 to 6 and 7 to 7.5, tolerate soil pH values of 4.8 to 5.5 and 7.5 to 8, and not survive in soil pH values below 4.8 and above 8. Using a fuzzy model allows all of those specific ranges and variation to be taken into account as a 1 could be assinged to soil pH values of 6-7, 0.75 could be assigned to soil pH values of 5.5 to 6 and 7 to 7.5, and so on.
+
 ## **Plots**
+### Comparing the predicted average annual precipitation (mm) from 2076-2080 in the Caddo National Grasslands for RCP values of 4.5 and 8.5:
+<img
+    src="/habitat-suitability-notebooks/habitat-suitability-plots-images/cng_bound_ave_ann_precip_rcp45_2076_2080_reproj_match_plot.png"
+    alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
+    width="25%">
+<img
+    src="/habitat-suitability-notebooks/habitat-suitability-plots-images/cng_bound_ave_ann_precip_rcp85_2076_2080_reproj_match_plot.png"
+    alt="A plot of the Sheyenne National Grasslands on latitude and longitude axes. The grassland is a blue plot on a whitebackground."
+    width="25%">
+
+## **Citations**
+1. “Caddo-LBJ National Grasslands.” National Forests and Grasslands in Texas, U.S. Forest Service, U.S. Department of Agriculture, www.fs.usda.gov/detail/texas/about-forest/districts/?cid=fswdev3_008440. Accessed 2 Dec. 2024.
+2. Caddo National Grasslands WMA, Texas Parks and Wildlife Department, tpwd.texas.gov/huntwild/hunt/wma/find_a_wma/list/?id=4. Accessed 2 Dec. 2024.
+3. Chaney, N. W., Wood, E. F., McBratney, A. B., Hempel, J. W., Nauman, T. W., Brungard, C. W., & Odgers, N. P. (2016). POLARIS: A 30-meter probabilistic soil series map of the contiguous United States. Geoderma, 274, 54–67. USGS Publications Warehouse. https://doi.org/10.1016/j.geoderma.2016.03.025
+4. NASA JPL (2013). <i>NASA Shuttle Radar Topography Mission Global 1 arc second</i> [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center. Accessed 2024-12-15 from https://doi.org/10.5067/MEaSUREs/SRTM/SRTMGL1.003
+5. “Sheyenne National Grassland.” Dakota Prairie Grasslands, U.S. Forest Service, U.S. Department of Agriculture, www.fs.usda.gov/recarea/dpg/recarea/?recid=79470. Accessed 2 Dec. 2024.
